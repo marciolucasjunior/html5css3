@@ -38,6 +38,9 @@ padding: 60px 30px 60px 30px;
 .div1 {
     background-image: url(imagens/background001.jpg);
     background-color: blue;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
     padding: 30px;
 }
 
@@ -50,7 +53,10 @@ padding: 60px 30px 60px 30px;
 
 .div2 {
     background-image: url(imagens/background002.jpg);
-    background-color: blue;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616) ;
+    background-attachment: fixed;
     padding: 30px;
 }
 
@@ -62,6 +68,7 @@ padding: 60px 30px 60px 30px;
 }
     
 footer {
+   font-size: 20px;
    color: white;
    background-color: black;
    padding: 20px;
