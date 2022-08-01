@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(72, 23, 117);
+}
+
+table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+}
+
+caption {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead > tr > th {
+position: sticky;
+top: -1px;
+background-color: grey;
+
+}
+
+thead,tfoot {
+    background-color: grey;
+    color: white;
+}
+
+.nun {
+    text-align: right;
+}
+
+.nun2 {
+    text-align: right;
+}
+
+
+tbody > tr:nth-child(2n) {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+        THEAD (TR,TD,TH)
+        TBODY (TR,TD,TH)
+        TFOOT (TR,TD,TH)
+    -->
+<h1>Uso de tabelas grandes</h1>
+<table>
+    <caption>População das unidades Federativas</caption>
+ <thead>
+    
+    <tr>
+        <th scope="col">
+            Estado
+        </th>
+        <th scope="col" style="width :50px"> 
+            População
+        </th>
+    </tr>
+
+ </thead>
+
+ <tbody>
+<tr>
+    <td>São paulo</td>
+    <td class="nun">45 919 049</td>
+</tr>
+<tr>
+    <td>Rio de janeiro</td>
+    <td class="nun">17 264 943</td>
+</tr>
+
+<tr>
+    <td>Minas Gerais</td>
+    <td class="nun">14 873 064</td>
+</tr>
+
+<tr>
+    <td>Rio de janeiro</td>
+    <td class="nun">17 264 943</td>
+</tr>
+
+<tr>
+    <td>Bahia</td>
+    <td class="nun">21 168 791</td>
+</tr>
+
+<tr>
+    <td>Paraná</td>
+    <td class="nun">11 413 957</td>
+</tr>
+
+<tr>
+    <td>Rio Grande do Sul</td>
+    <td class="nun">11 377 239</td>
+</tr>
+
+<tr>
+    <td>Pernanbuco</td>
+    <td class="nun">9 557 071</td>
+</tr>
+
+ </tbody>
+
+<tfoot>
+<tr>
+    
+         <th scope="rol">Total de habitantes</th>
+         <td class="nun2"><strong>148.859.057</strong></td>
+</tr>
+</tfoot>
+
+
+</table>
+
+</body>
+</html>
