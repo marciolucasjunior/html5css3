@@ -10,24 +10,31 @@
     <h1>Exemplo de formúlario</h1>
 
      <form action="cadastro.php" method="get" autocomplete="on">
+         
+      <fieldset>
+         <legend>Dados pessoais</legend>
          <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required>
+           <label for="inome">Nome</label>
+           <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
          </p>
-
+         
+         
+         
+         
          <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" required>
-
-
-         </p>
-
-            <p>
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Limpar">
-
-
+               <label for="iemail">E-mail</label>
+               <input type="email" name="email" id="iemail" autocomplete="email" required>
             </p>
+               <!--Estudar mais sibre regex-->
+            <p>
+               <label for="itel">Telefone</label>
+               <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+               <p>
+                     <input type="submit" value="Enviar">
+                     <input type="reset" value="Limpar">
+               </p>
+      </fieldset>
 
 
 
