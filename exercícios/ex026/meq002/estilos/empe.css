@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* configurações empé (portrait)  */
+
+
+body {
+    background-image: url(../imagens1/cev-portrait.jpg);
+    background-position: left bottom ;
+
+}
+   
